@@ -1,2 +1,16 @@
 # country-info-vuejs-graphql
-VueJS and GraphQL API for Continental/Country information retrieval
+
+## Project setup
+```
+yarn install
+```
+
+### Compiles and hot-reloads for development
+```
+yarn run serve
+```
+
+### Compiles and minifies for production
+```
+yarn run build
+```
