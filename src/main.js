@@ -1,15 +1,18 @@
-import Vue from 'vue'
-import App from './App.vue'
-import router from './router'
-import store from './store'
-import './registerServiceWorker'
-import { createProvider } from './vue-apollo'
+import Vue from 'vue';
+import VueLodash from 'vue-lodash';
 
-Vue.config.productionTip = false
+import App from './App.vue';
+import router from './router';
+import store from './store';
+import './registerServiceWorker';
+import { createProvider } from './vue-apollo';
+
+Vue.config.productionTip = false;
+Vue.use(VueLodash, {});
 
 new Vue({
   router,
   store,
   apolloProvider: createProvider(),
-  render: h => h(App)
-}).$mount('#app')
+  render: h => h(App),
+}).$mount('#app');
