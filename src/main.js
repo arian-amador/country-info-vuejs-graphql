@@ -13,7 +13,7 @@ import 'vuetify/dist/vuetify.min.css';
 
 Vue.config.productionTip = false;
 Vue.use(VueLodash, {});
-Vue.use(Vuetify);
+Vue.use(Vuetify, { theme: { primary: '#296887' } });
 
 new Vue({
   router,
