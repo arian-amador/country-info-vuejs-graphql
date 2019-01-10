@@ -1,5 +1,5 @@
 <template>
-  <v-container fluid fill-height>
+  <v-container fluid>
     <v-layout align-center justify-center>
       <v-flex xs12 sm8 md6>
         <v-card light class="elevation-12">
@@ -43,10 +43,13 @@
                 item-value="alpha2"
                 label="Select Country for details"
                 outline
+                clearable
               ></v-autocomplete>
             </v-flex>
+
             <v-divider></v-divider>
-            <Details v-if="country" v-bind:country="country"></Details>
+
+            <Details v-if="country" v-bind:country="country" name="scaleY"></Details>
           </v-card-title>
         </v-card>
       </v-flex>
