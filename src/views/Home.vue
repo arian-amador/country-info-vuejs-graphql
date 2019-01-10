@@ -28,7 +28,7 @@
               >
                 <v-icon large>graphic_eq</v-icon>
               </v-btn>
-              <span>Source</span>
+              <span>GraphQL API</span>
             </v-tooltip>
           </v-toolbar>
 
